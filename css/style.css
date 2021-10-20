@@ -1,0 +1,189 @@
+body,
+p,
+h1,
+h2,
+h3,
+input,
+label {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+}
+
+.corpo-celeste {
+    display: flex;
+    margin: 0 auto;
+    width: 700px;
+    height: 700px;
+    background-image: url('https://i.pinimg.com/originals/39/5e/5e/395e5e1566386b49ebb5634b857b3ee7.gif');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+/* ===================== INICIO */
+
+.section-inicio {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.container-inicio {
+    text-align: center;
+    width: 350px;
+    background-color: rgb(75, 75, 75);
+    position: relative;
+}
+
+
+/* --------------------------- VERIFICANDO SE TEM CADASTRO */
+
+.temUmaConta::after {
+    content: 'Cadastrado!';
+    background-color: rgb(9, 102, 4);
+    opacity: 70%;
+    color: rgb(202, 202, 202);
+    right: 0;
+    padding: 3px;
+    position: absolute;
+}
+
+.AddConta::before {
+    content: 'Cadastra-se!';
+    background-color: rgb(131, 127, 5);
+    opacity: 70%;
+    color: rgb(202, 202, 202);
+    right: 0;
+    bottom: 0;
+    padding: 3px;
+    position: absolute;
+}
+
+.cadastrar {
+    position: relative;
+}
+
+@keyframes setaLeft {
+    from {
+        left: 13px;
+    }
+    to {
+        left: 18px;
+    }
+}
+
+@keyframes setaRigth {
+    from {
+        right: 13px;
+    }
+    to {
+        right: 18px;
+    }
+}
+
+.cadastrar::after {
+    content: '⇜';
+    color: rgb(131, 127, 5);
+    right: 18px;
+    bottom: -4px;
+    padding: 3px;
+    position: absolute;
+    animation: setaRigth .5s ease-in 0s infinite alternate;
+}
+
+.cadastrar::before {
+    content: '⇝';
+    color: rgb(131, 127, 5);
+    left: 18px;
+    bottom: -4px;
+    padding: 3px;
+    position: absolute;
+    animation: setaLeft .5s ease-in 0s infinite alternate;
+}
+
+
+/* --------------------------- CADASTRO COMCLUIDO */
+
+.voltar {
+    position: relative;
+}
+
+.ativarVoltar::after {
+    content: '⇜';
+    color: rgb(41, 150, 5);
+    right: 18px;
+    bottom: -4px;
+    padding: 3px;
+    position: absolute;
+    animation: setaRigth .5s ease-in 0s infinite alternate;
+}
+
+.ativarVoltar::before {
+    content: '⇝';
+    color: rgb(41, 150, 5);
+    left: 18px;
+    bottom: -4px;
+    padding: 3px;
+    position: absolute;
+    animation: setaLeft .5s ease-in 0s infinite alternate;
+}
+
+
+/* ------------------------------------------------------------------------------------- */
+
+.container-inicio h1 {
+    color: white;
+    margin: 20px 0 20px 0;
+}
+
+.container-inicio label {
+    color: rgb(213, 213, 213);
+}
+
+.input {
+    margin: 10px 4px 10px 4px;
+    font-size: 15px;
+    width: 220px;
+    height: 30px;
+    border: none;
+    color: white;
+    border-bottom: 1px solid white;
+    background: transparent;
+}
+
+.container-inicio button {
+    color: white;
+    background-color: rgb(33, 33, 33);
+    padding: 15px 40px 15px 40px;
+    margin-top: 20px;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.container-inicio button:hover {
+    background-color: rgb(179, 179, 179);
+}
+
+.container-inicio a {
+    width: 150px;
+    display: block;
+    color: white;
+    font-size: 18px;
+    margin: 20px auto;
+}
+
+.container-inicio a:hover {
+    color: rgb(163, 163, 163);
+}
+
+
+/* ======================================== */

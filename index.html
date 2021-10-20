@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/ativarCor.css">
+    <title>Entrar</title>
+</head>
+
+<body>
+
+
+    <section class="section-inicio">
+        <div class="container-inicio">
+
+            <div class="temConta"></div>
+            <div class="NaotemConta"></div>
+
+            <h1 class="h1">Entrar</h1>
+
+            <label class="ErroEmail"></label>
+            <input class="input inputEmail" type="text" id="entrarEmail" placeholder="Digite seu e-mail"> <br>
+
+            <label class="ErroSenha"></label>
+            <input class="input inputSenha" type="password" id="entrarSenha" placeholder="Digite sua senha"> <br>
+
+            <button onclick="EntrarNaconta()">Entrar</button> <br>
+
+            <a class="cadastro" href="/html/criarConta.html">Cadastrar</a>
+        </div>
+    </section>
+
+
+    <script src="/js/script.js"></script>
+    <script src="/js/ativarCor.js"></script>
+    <script>
+        ContaExistente()
+    </script>
+</body>
+
+</html>

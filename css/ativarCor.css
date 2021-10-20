@@ -1,0 +1,120 @@
+.ativarBordaVermelha {
+    border-bottom: solid 1px red;
+}
+
+.ativarColorVermelho {
+    color: rgb(170, 61, 61);
+}
+
+.ativarColorVerde {
+    color: green;
+}
+
+.ativarErroEmail {
+    position: relative;
+}
+
+.ativarErroEmail::after {
+    color: rgb(170, 61, 61);
+    content: 'e-mail incorreto!';
+    width: 200px;
+    position: absolute;
+    left: 70px;
+    bottom: -25px;
+}
+
+.ativarErroSenha {
+    position: relative;
+}
+
+.ativarErroSenha::after {
+    color: rgb(170, 61, 61);
+    content: 'senha incorreta!';
+    width: 200px;
+    position: absolute;
+    left: 70px;
+    bottom: -25px;
+}
+
+.ativarPreenchaCampor {
+    position: relative;
+}
+
+.ativarPreenchaCampor::after {
+    color: rgb(170, 61, 61);
+    content: 'Preencha todos os campos!';
+    font-size: 20px;
+    width: 300px;
+    position: absolute;
+    left: 20px;
+    bottom: -25px;
+}
+
+.naoPossuiCadastro {
+    position: relative;
+}
+
+.naoPossuiCadastro::after {
+    color: rgb(170, 61, 61);
+    content: 'Você não possui um cadastro!';
+    font-size: 20px;
+    width: 300px;
+    position: absolute;
+    left: 20px;
+    bottom: -25px;
+}
+
+.crirEmailErrado {
+    position: relative;
+}
+
+.crirEmailErrado::after {
+    color: rgb(170, 61, 61);
+    content: 'O e-mail não está correto!';
+    width: 200px;
+    position: absolute;
+    left: 120px;
+    bottom: -25px;
+}
+
+.crirSenhaSeisCaracteres {
+    position: relative;
+}
+
+.crirSenhaSeisCaracteres::after {
+    color: rgb(170, 61, 61);
+    content: 'A senha tem que ter no mínimo 6 caracteres!';
+    font-size: 15px;
+    width: 300px;
+    position: absolute;
+    left: 25px;
+    bottom: -33px;
+}
+
+.crirSenhaNaoIgual {
+    position: relative;
+}
+
+.crirSenhaNaoIgual::before {
+    color: rgb(170, 61, 61);
+    content: 'As senhas não estão iguais!';
+    font-size: 15px;
+    width: 300px;
+    position: absolute;
+    left: 25px;
+    bottom: -15px;
+}
+
+.cadastroCriado {
+    position: relative;
+}
+
+.cadastroCriado::before {
+    color: rgb(41, 150, 5);
+    content: 'Cadastro criado com sucesso!';
+    font-size: 20px;
+    width: 300px;
+    position: absolute;
+    left: 25px;
+    bottom: -30px;
+}
